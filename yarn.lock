@@ -110,8 +110,8 @@ are-we-there-yet@~1.1.2:
 
 argparse@^1.0.7:
   version "1.0.10"
-  resolved "http://registry.npm.taobao.org/argparse/download/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
-  integrity sha1-vNZ5HqWuCXJeF+WtmIE0zUCz2RE=
+  resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
+  integrity sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
   dependencies:
     sprintf-js "~1.0.2"
 
@@ -783,8 +783,8 @@ escape-string-regexp@^1.0.2, escape-string-regexp@^1.0.5:
 
 esprima@^4.0.0:
   version "4.0.1"
-  resolved "http://registry.npm.taobao.org/esprima/download/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
-  integrity sha1-E7BM2z5sXRnfkatph6hpVhmwqnE=
+  resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
+  integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
 
 etag@~1.8.1:
   version "1.8.1"
@@ -1653,9 +1653,9 @@ isstream@~0.1.2:
   integrity sha1-R+Y/evVa+m+S4VAOaQ64uFKcCZo=
 
 js-yaml@^3.6.1:
-  version "3.13.0"
-  resolved "http://registry.npm.taobao.org/js-yaml/download/js-yaml-3.13.0.tgz#38ee7178ac0eea2c97ff6d96fff4b18c7d8cf98e"
-  integrity sha1-OO5xeKwO6iyX/22W//SxjH2M+Y4=
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
+  integrity sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
@@ -1755,105 +1755,10 @@ less@^3.9.0:
     request "^2.83.0"
     source-map "~0.6.0"
 
-live2d-widget-model-epsilon2_1@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-epsilon2_1/download/live2d-widget-model-epsilon2_1-1.0.5.tgz#c1501a07bdceb971821f2eee9837d8b593839de5"
-  integrity sha1-wVAaB73OuXGCHy7umDfYtZODneU=
-
-live2d-widget-model-gf@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-gf/download/live2d-widget-model-gf-1.0.5.tgz#38e39ae08e4b1ac1a44961eb59ebdaa8753b111a"
-  integrity sha1-OOOa4I5LGsGkSWHrWevaqHU7ERo=
-
-live2d-widget-model-haru@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-haru/download/live2d-widget-model-haru-1.0.5.tgz#6b51addbb4912df4aaaeaac4da64f1df04ee8f1d"
-  integrity sha1-a1Gt27SRLfSqrqrE2mTx3wTujx0=
-
-live2d-widget-model-haruto@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-haruto/download/live2d-widget-model-haruto-1.0.5.tgz#0a6ae6a93393008246e3f6a30b5b14bb77d2ee55"
-  integrity sha1-CmrmqTOTAIJG4/ajC1sUu3fS7lU=
-
-live2d-widget-model-hibiki@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-hibiki/download/live2d-widget-model-hibiki-1.0.5.tgz#0ef1d99b43d279fb9531bccaa9acc12dd5069ff5"
-  integrity sha1-DvHZm0PSefuVMbzKqazBLdUGn/U=
-
 live2d-widget-model-hijiki@^1.0.5:
   version "1.0.5"
   resolved "http://registry.npm.taobao.org/live2d-widget-model-hijiki/download/live2d-widget-model-hijiki-1.0.5.tgz#c2ddc6b2380be11b8b8bc2df0d82fd6dfa007f11"
   integrity sha1-wt3GsjgL4RuLi8LfDYL9bfoAfxE=
-
-live2d-widget-model-izumi@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-izumi/download/live2d-widget-model-izumi-1.0.5.tgz#a6f6b12bdc394bfe0dc57e436a9c303dcbe6a997"
-  integrity sha1-pvaxK9w5S/4NxX5DapwwPcvmqZc=
-
-live2d-widget-model-koharu@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-koharu/download/live2d-widget-model-koharu-1.0.5.tgz#6525e2c495af40b074d91c31499d4a71711cfccc"
-  integrity sha1-ZSXixJWvQLB02RwxSZ1KcXEc/Mw=
-
-live2d-widget-model-miku@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-miku/download/live2d-widget-model-miku-1.0.5.tgz#49a0b7b4bbc371e36b75cf62d745933e7bcf108b"
-  integrity sha1-SaC3tLvDceNrdc9i10WTPnvPEIs=
-
-live2d-widget-model-ni-j@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-ni-j/download/live2d-widget-model-ni-j-1.0.5.tgz#cd73bd0a009669d71aa45009deb8fc5f0b8e3b67"
-  integrity sha1-zXO9CgCWadcapFAJ3rj8XwuOO2c=
-
-live2d-widget-model-nico@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-nico/download/live2d-widget-model-nico-1.0.5.tgz#a4acbe3d9b2b8aa9f9c12a077606b0d27cfdbe20"
-  integrity sha1-pKy+PZsriqn5wSoHdgaw0nz9viA=
-
-live2d-widget-model-nietzsche@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-nietzsche/download/live2d-widget-model-nietzsche-1.0.5.tgz#c88a061958971fc68f53eb53c7bd41108af25dca"
-  integrity sha1-yIoGGViXH8aPU+tTx71BEIryXco=
-
-live2d-widget-model-nipsilon@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-nipsilon/download/live2d-widget-model-nipsilon-1.0.5.tgz#3805c87c8239306c95f87dcfbcf166e4eca9cfa4"
-  integrity sha1-OAXIfII5MGyV+H3PvPFm5Oypz6Q=
-
-live2d-widget-model-nito@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-nito/download/live2d-widget-model-nito-1.0.5.tgz#29b15498872e8b39ad7ebc6f4e77b491f47b8c9e"
-  integrity sha1-KbFUmIcuizmtfrxvTne0kfR7jJ4=
-
-live2d-widget-model-shizuku@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-shizuku/download/live2d-widget-model-shizuku-1.0.5.tgz#136f269690b20738fa0e9b67e33aa643007512a8"
-  integrity sha1-E28mlpCyBzj6Dptn4zqmQwB1Eqg=
-
-live2d-widget-model-tororo@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-tororo/download/live2d-widget-model-tororo-1.0.5.tgz#f556caff824198ff41d12f7cec807e1301ebc9d1"
-  integrity sha1-9VbK/4JBmP9B0S987IB+EwHrydE=
-
-live2d-widget-model-tsumiki@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-tsumiki/download/live2d-widget-model-tsumiki-1.0.5.tgz#de742cecb460964642f662377dddbadbd3c3feeb"
-  integrity sha1-3nQs7LRglkZC9mI3fd2629PD/us=
-
-live2d-widget-model-unitychan@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-unitychan/download/live2d-widget-model-unitychan-1.0.5.tgz#fdf0ad303eaca04d42dec05c45a82a24184b7953"
-  integrity sha1-/fCtMD6soE1C3sBcRagqJBhLeVM=
-
-live2d-widget-model-wanko@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-wanko/download/live2d-widget-model-wanko-1.0.5.tgz#2833486bc76528ce37e7e04fdbbe623191e03953"
-  integrity sha1-KDNIa8dlKM435+BP275iMZHgOVM=
-
-live2d-widget-model-z16@^1.0.5:
-  version "1.0.5"
-  resolved "http://registry.npm.taobao.org/live2d-widget-model-z16/download/live2d-widget-model-z16-1.0.5.tgz#7604025e733d6fc6b24a60c3231e5b62d5e532a1"
-  integrity sha1-dgQCXnM9b8aySmDDIx5bYtXlMqE=
 
 live2d-widget@^3.0.5:
   version "3.0.5"
@@ -2861,7 +2766,7 @@ sprintf-js@^1.0.2, sprintf-js@^1.0.3:
 
 sprintf-js@~1.0.2:
   version "1.0.3"
-  resolved "http://registry.npm.taobao.org/sprintf-js/download/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
+  resolved "https://registry.yarnpkg.com/sprintf-js/-/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
 sshpk@^1.7.0:
