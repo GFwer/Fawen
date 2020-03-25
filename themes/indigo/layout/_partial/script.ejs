@@ -1,22 +1,62 @@
-<script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script src="//cdn.bootcss.com/node-waves/0.7.6/waves.min.js"></script>
 <script>
-var BLOG = { ROOT: '<%= config.root %>', SHARE: <%- theme.share %>, REWARD: <%- Boolean(page.reward) %> };
+    var BLOG = { ROOT: '<%= config.root %>', SHARE: <%- theme.share %>, REWARD: <%- Boolean(page.reward) %> };
 
-<% if (theme.cnzz){ %>
-lazyScripts.push('//s95.cnzz.com/z_stat.php?id=<%-theme.cnzz %>&web_id=<%-theme.cnzz %>')
-<% } %>
+    <% if (theme.cnzz){ %>
+    lazyScripts.push('//s95.cnzz.com/z_stat.php?id=<%-theme.cnzz %>&web_id=<%-theme.cnzz %>')
+    <% } %>
 </script>
 
 <script src="<%- url_for(theme_js('/js/main', cache)) %>"></script>
-<% if (theme.search){ %>
-<%- partial('search') %>
+<% if (theme.search){ %> <%- partial('search') %>
 <script src="<%- url_for(theme_js('/js/search', cache)) %>" async></script>
-<% } %>
+<% } %> <%- partial('plugins/mathjax') %>
+<script>
+    (function() {
+        var scriptList = document.querySelectorAll(
+            'script[type="text/ls-javascript"]'
+        );
 
-<%- partial('plugins/mathjax') %>
-
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id, item.id);
+        }
+    })();
+    Function.prototype.getMultiLine = function() {
+        var lines = new String(this);
+        lines = lines.substring(lines.indexOf("`") + 3, lines.lastIndexOf("`"));
+        return lines;
+    };
+    var string = function() {
+        `
+          ________ ________  ___       __   _______   ________
+          |\  _____\\   __  \|\  \     |\  \|\  ___ \ |\   ___  \
+          \ \  \__/\ \  \|\  \ \  \    \ \  \ \   __/|\ \  \\ \  \
+          \ \   __\\ \   __  \ \  \  __\ \  \ \  \_|/_\ \  \\  \  \
+            \ \  \_| \ \  \ \  \ \  \|\__\_\  \ \  \_|\ \ \  \\ \  \
+            \ \__\   \ \__\ \__\ \____________\ \_______\ \__\\  \__\
+              \|__|    \|__|\|__|\|____________|\|_______|\|__| \|__|                       For man is man and master of his fate.
+        `;
+    };
+    window.console.log(
+        "%c" + string.getMultiLine(),
+        "color:#03A9F4;padding:10px;border-radius:3px;"
+    );
+</script>
 <% if (theme.visit_counter) { %>
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<% } %>
-
-<%- partial('plugins/dynamic-title') %>
+<script
+    async
+    src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+></script>
+<% } %> <%- partial('plugins/dynamic-title') %>
+<script>
+    document.body.addEventListener("copy", function(e) {
+        try {
+            var text =
+                window.getSelection().toString() +
+                "\n\n\n偷偷复制被我发现了！我想如果您能注明出处就好了XD";
+            e.clipboardData.setData("text/plain", text);
+            e.preventDefault();
+        } catch (error) {}
+    });
+</script>

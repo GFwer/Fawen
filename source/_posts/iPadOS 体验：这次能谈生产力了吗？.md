@@ -1,7 +1,7 @@
 ---
 title: iPadOS 体验：这次能谈生产力了吗？
 tags: [iPad,iPadOS]
-category: iPad,iPadOS
+category: iPad
 date: 2019-6-8 00:23
 ---
 
