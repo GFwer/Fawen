@@ -6,9 +6,15 @@
 	<array>
 		<dict>
 			<key>localURL</key>
-			<string>media/15848646622000.jpg</string>
+			<string>media/bilibili_vidio.gif</string>
 			<key>remoteURL</key>
-			<string>https://static.gongfangwen.com/2020-03-22-15848646622000.jpg</string>
+			<string>https://static.gongfangwen.com/2020-04-05-bilibili_vidio.gif</string>
+		</dict>
+		<dict>
+			<key>localURL</key>
+			<string>media/15860743099758.jpg</string>
+			<key>remoteURL</key>
+			<string>https://static.gongfangwen.com/2020-04-05-15860743099758.jpg</string>
 		</dict>
 	</array>
 	<key>selectedItem</key>

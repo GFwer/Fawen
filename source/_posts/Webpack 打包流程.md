@@ -115,12 +115,16 @@ var name = 'fawen'
 export { name }
 
 // 引入
-import { name } from './name.js'
+import { name } from './name.js';
 ```
 如果要在现代浏览器中直接使用，需要加上`module`：
 ```html
 <script src="name.js" type="module"></script>
 ```
+
+#### UMD
+UMD 是 AMD（浏览器端） 和 CommonJS（ Node 端） 的耦合，它会先判断是否支持 Node.js 模块，支持就以 CommonJS 方式加载，在判断是否支持 AMD，支持就以 AMD 方式加载。
+
 #### ES6 和 CommonJS
 ES6 和 CommonJS 主要有两个差异：
 
@@ -132,10 +136,9 @@ ES6 和 CommonJS 主要有两个差异：
 
 ## 构建流程
 
+完整的流程如下图：
 
-
-![流程](https://static.gongfangwen.com/2020-03-29-15854826405394.jpg)
-
+<figure class="image-bubble"><div class="img-lightbox"><div class="overlay"></div><img src="https://static.gongfangwen.com/2020-03-29-15854826405394.jpg" alt="流程"></div><div class="image-caption">流程</div></figure>
 
 
 根据《深入浅出 webpack》，webpack 从开始到结束大致分成几个流程：

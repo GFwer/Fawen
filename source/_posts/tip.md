@@ -15,14 +15,14 @@ JavaScript用的是静态（词法）作用域
 ## 变量提升
 进入执行上下文的时候，首先处理函数声明、其次处理变量声明、如果变量声明和已经声明的形参或函数相同，则变量声明不会干扰
 ```javascript
-console.log(foo);
+console.log(foo); // 结果是打印函数
 
 function foo(){
    console.log("foo")
 }
 
 var foo = 1;
-// 结果是打印函数
+console.log(foo); // 1
 ```
 
 **闭包**指的是能够访问自由变量的函数。

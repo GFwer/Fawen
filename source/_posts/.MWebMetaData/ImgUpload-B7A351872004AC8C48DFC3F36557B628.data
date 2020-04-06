@@ -6,15 +6,9 @@
 	<array>
 		<dict>
 			<key>localURL</key>
-			<string>media/2880px-General_floating_point_frac.svg.png</string>
+			<string>media/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F.png</string>
 			<key>remoteURL</key>
-			<string>https://static.gongfangwen.com/2020-03-19-2880px-General_floating_point_frac.svg.png</string>
-		</dict>
-		<dict>
-			<key>localURL</key>
-			<string>media/15846295776451.jpg</string>
-			<key>remoteURL</key>
-			<string>https://static.gongfangwen.com/2020-03-19-15846295776451.jpg</string>
+			<string>https://static.gongfangwen.com/2020-04-04-观察者模式.png</string>
 		</dict>
 	</array>
 	<key>selectedItem</key>
