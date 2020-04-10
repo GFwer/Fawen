@@ -267,7 +267,7 @@ function create(o) {
 ```javascript
 function inherit(child, parent) {
   // 创建父类型原型副本，手动把其构造方法指向子类型
-  var prototype = Object(parent.prototype);
+  var prototype = Object.create(parent.prototype);
   prototype.constructor = child;
   child.prototype = prototype;
 }

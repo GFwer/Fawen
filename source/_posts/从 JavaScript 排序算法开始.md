@@ -106,7 +106,7 @@ function selectionSort(arr) {
     size = arr.length;
   // 这里只需要循环 size - 1 次，最后一次只有一个数不用循环
   for (let i = 0; i < size - 1; i++) {
-    minIndex = i; // 第 i + 1 次循环，从 i 开始
+    minIndex = arr[i]; // 第 i + 1 次循环，从 i 开始
     // 找出剩余数组中最小数的索引
     for (let j = i + 1; j < size; j++) {
       if (arr[j] < arr[minIndex]) minIndex = j;

@@ -13,7 +13,7 @@ date: 2020-04-03 23:53
 
 根据 ECMA 标准，由`obj[[Prototype]]`来表示指向`obj`的原型，它实际上等同于许多浏览器实现的`__proto__`的值（虽然是非标准的，应该以`Object.getPrototypeOf()`访问），不过为了行文方便，以下就以`__proto__`指代原型。
 
-### __proto__ 和 prototype 
+### `__proto__` 和 prototype 
 那么，`__proto__`和`prototype`又有什么区别？
 
 - `__proto__`，JavaScript 中任意对象都拥有这个属性，用于指向创建这个对象的函数的原型，他用来构成原型链。
