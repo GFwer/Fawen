@@ -3,3 +3,6 @@
 db.json
 .DS_Store
 /_config.yml
+serverless.yml
+.env*
+.serverless
