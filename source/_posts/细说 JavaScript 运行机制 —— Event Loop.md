@@ -54,6 +54,14 @@ console.log(2)
 ### async
 对于`async`来说，可以将其看做`Promise`封装的对象，其中`await`之前的代码立即执行，`await`及其之后相当于放在`then`之中。
 
+### rAF 和 rIC
+rAF（requestAnimationFrame） 和 rIC（requestIdleCallback）实际上属于浏览器渲染层面的函数。
+
+通过 rAF 可以在下一次渲染之前执行回调函数，它不属于事件循环的微任务，是浏览器根据当前情况自动判定执行时机。
+
+而 rIC 更不用说了，根据繁忙状态，可能回调函数永远得不到执行。
+
+这两个函数不包括在事件循环的生命周期中。
 
 ## 参考
 [JavaScript Event Loop 机制详解与 Vue.js 中实践应用](https://zhuanlan.zhihu.com/p/29116364)

@@ -28,6 +28,16 @@ menu:
     text: 微博
     url: https://weibo.com/GFawen/
     target: _blank
+  terminal:
+    text: TypeScript（更新中！）
+    url: https://typescript.gongfangwen.com
+    target: _blank
+    class: hint
+  code:
+    text: Serverless 站
+    url: https://serverless.gongfangwen.com
+    target: _blank
+    class: hint
   link:
     text: 关于
     url: /about

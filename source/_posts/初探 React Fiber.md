@@ -41,7 +41,7 @@ requestIdleCallback(()=>{
 ```
 现在 React 已经不使用这个函数了，React 在 Scheduler 中实现了自己的调度算法，不过核心思路和`requestIdleCallback`类似。
 
-简单来说，在事件循环中，如果仅仅依靠调用栈，那么调用栈将一直执行到空未知，这时候可能出现失去同步问题，所以 React Fiber 的核心思想就是将同步的递归模型迁移到异步的链表指针模型上，它相当于一个可控的调用栈，随时可以中断。
+简单来说，在事件循环中，如果仅仅依靠调用栈，那么调用栈将一直执行到空为止，这时候可能出现失去同步问题，所以 React Fiber 的核心思想就是将同步的递归模型迁移到异步的链表指针模型上，它相当于一个可控的调用栈，随时可以中断。
 
 
 ## Fiber 
@@ -103,7 +103,12 @@ class ClickCounter {
 ### Fiber 节点
 在 render 阶段，上面产生的 React 元素的数据都会被合并到 Fiber tree 中，这意味着每个 React 元素都会有一个相应的 Fiber 节点，不过和 React 元素不同，每次重新渲染不会重新创建，这意味着 Fiber tree 是可变的数据结构，每次更新 React 都会利用 React 元素的属性来更新 Fiber 节点，如果某一次更新没有返回对应的元素，Fiber tree 还会根据 key 来做移动或者删除。
 
-所有的 Fiber 节点都通过链表链接起来。
+![](https://static.gongfangwen.com/2020-04-12-15867032824834.jpg)
+
+所有的 Fiber 节点都通过链表链接起来，有着三种指向：
+- `child`，指向子节点
+- `return`，指向上级节点
+- `sibling`，指向下个兄弟节点
 
 ### current tree 和 workInProgress tree
 在第一次渲染之后，React 就得到了一棵 Fiber tree，它反映了用于渲染 UI 的应用程序的状态，这棵树通常被称为 current 树，当 React 处理更新的时候，它会构建一棵 workInProgress 树，它反映了未来的 UI 状态。
@@ -147,7 +152,7 @@ export const ShouldCapture = /*         */ 0b1000000000000;
 遍历前
 ![nextEffect](https://static.gongfangwen.com/2020-04-12-15866925028106.jpg)
 链表直接遍历
-![](https://static.gongfangwen.com/2020-04-12-15866926217095.jpg)
+![快速遍历节点](https://static.gongfangwen.com/2020-04-12-15866926217095.jpg)
 
 
 ### Fiber 节点

@@ -24,7 +24,7 @@
           for (var i in theme.menu) {
             menuItem = theme.menu[i];
           %>
-            <li class="waves-block waves-effect<% if(isActive(menuItem)){ %> active<% } %>">
+            <li class="waves-block waves-effect<% if(isActive(menuItem)){ %> active<% } %>  <% if(menuItem.class){ %><%- menuItem.class %> <% } %>">
               <a href="<%- url_for(menuItem.url) %>" <% if(menuItem.target){ %>target="_blank"<% } %> >
                 <i class="icon icon-lg icon-<%= i %>"></i>
                 <%=(menuItem.text || _.startCase(i)) %>

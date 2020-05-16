@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>1B7EE1B168E597F15E356DC9AF33CCB1</key>
+	<array>
+		<dict>
+			<key>localURL</key>
+			<string>media/normalEvent.gif</string>
+			<key>remoteURL</key>
+			<string>https://static.gongfangwen.com/2020-04-15-normalEvent.gif</string>
+		</dict>
+		<dict>
+			<key>localURL</key>
+			<string>media/debounce1.gif</string>
+			<key>remoteURL</key>
+			<string>https://static.gongfangwen.com/2020-04-15-debounce1.gif</string>
+		</dict>
+		<dict>
+			<key>localURL</key>
+			<string>media/throttle.gif</string>
+			<key>remoteURL</key>
+			<string>https://static.gongfangwen.com/2020-04-15-throttle.gif</string>
+		</dict>
+	</array>
+	<key>selectedItem</key>
+	<string>1B7EE1B168E597F15E356DC9AF33CCB1</string>
+</dict>
+</plist>

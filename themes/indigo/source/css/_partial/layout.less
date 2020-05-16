@@ -269,3 +269,17 @@ a[title="站长统计"] {
         display: none;
     }
 }
+
+@keyframes hintMenu {
+    50% {
+        transform: scale(1.01);
+    }
+}
+.hint {
+    &,
+    a,
+    i {
+        color: #ec407a !important;
+    }
+    animation: hintMenu 1s ease infinite;
+}

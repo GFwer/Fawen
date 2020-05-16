@@ -76,6 +76,49 @@ TCP/IP 从互联网通信的角度分成四层：
 4. 客户端收到，发送 ACK 告诉服务端确认收到了 FIN 包，ack = p + 1 ，客户端等待 2 MSL（Maximum Segment Lifetime，报文段最大生存时间，如果这个包丢了服务端会发送超时重传的 FIN，客户端再传一次，保证双方都正常关闭） 后关闭连接
 5. 服务端收到，关闭连接
 
+## 跨域
+由于同源策略（同协议同主机通端口）限制，浏览器可能会限制跨源请求（限制发起/拦截返回）
+跨域可以通过很多方式实现，比如 iframe、jsonp 等，不过这都不是重点，重点是 CORS，可以用 CORS 来发起跨源访问。
+## CORS
+CORS，即跨域资源共享，它允许 Web 应用服务器进行跨域访问控制，我们可以再 XHR 或者 Fetch 中使用 CORS。
+
+简单来说，CORS 新增了 HTTP 头部字段，允许服务器声明哪些源站通过浏览器有权限访问哪些资源。浏览器必须首先使用 OPTIONS 方法发起预检请求，从而获知服务器是否允许这个跨域请求，服务器允许后才发起真正的请求。如果服务器不允许会产生错误，不过 JavaScript 无法获取到底是哪里出现了错误。
+
+### 请求分类
+
+#### 简单请求
+
+> 首先说明，Fetch API 没有定义简单请求，不过也可以借用其定义。
+
+一些请求不会触发简单 CORS 预检，这些称为“简单请求”：
+- GET
+- HEAD
+- POST
+
+#### 预检请求
+
+必须先使用 OPTIONS 预检的请求称为“预检请求”：
+- PUT
+- DELETE
+- CONNECT
+- OPTIONS
+- TRACE
+- PATCH
+
+### 头部
+当需要发起跨域请求的时候，预检请求和实际请求中，该字段会自动被设置：
+```
+Origin: "https://blog.gongfangwen.com"
+```
+预检请求需要告诉服务端这个请求将会使用什么方法：
+```
+Access-Control-Request-Method: GET
+```
+预检请求还需要告诉服务端真正的请求中会使用哪些请求头：
+```
+Access-Control-Request-Headers: X-Fawen, Content-Type
+```
+
 ## HTTPS
 首先来看看 HTTPS，HTTPS 实际上就是加上 SSL/TLS 的 HTTP。
 HTTPS 报文中的任何东西都被加密，包括所有报头和荷载
